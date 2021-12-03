@@ -17,6 +17,9 @@ public class HealthTrapBehavior : MonoBehaviour
             case (HealthTrapType.DoT):
                 trap = new DoTDamageTrap();
                 break;
+            case (HealthTrapType.Injur):
+                trap = new InjurTrap();
+                break;
         }
     }
 
@@ -27,5 +30,5 @@ public class HealthTrapBehavior : MonoBehaviour
     }
 }
 
-public enum HealthTrapType { Instant, DoT }
+public enum HealthTrapType { Instant, DoT, Injur }
 

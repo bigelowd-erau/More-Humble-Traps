@@ -17,6 +17,9 @@ public class CCTrapBehavior : MonoBehaviour
             case (CCTrapType.Slow):
                 trap = new SlowTrap();
                 break;
+            case (CCTrapType.Injur):
+                trap = new InjurTrap();
+                break;
         }
     }
 
@@ -27,4 +30,4 @@ public class CCTrapBehavior : MonoBehaviour
     }
 }
 
-public enum CCTrapType { Root, Slow}
+public enum CCTrapType { Root, Slow, Injur}

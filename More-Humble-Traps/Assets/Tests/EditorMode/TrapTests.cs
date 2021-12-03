@@ -16,8 +16,8 @@ public class TrapTests
         IHealthTrap trap = new InstantDamageTrap();
         IPlayer player = Substitute.For<IPlayer>();
         player.IsPlayer.Returns(true);
+        player.Health = 100;
         trap.HandleCharacterEntered(player);
         Assert.AreEqual(90, player.Health);
     }
-    
 }
